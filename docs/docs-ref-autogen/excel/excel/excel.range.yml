@@ -165,11 +165,19 @@ items:
           - string
   - uid: excel.Excel.Range.autoFill
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle).
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -183,22 +191,30 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to AutoFill. Discontiguous ranges are not supported.
           type:
             - Range | string
         - id: autoFillType
           description: >-
-            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
+            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
           type:
             - excel.Excel.AutoFillType
   - uid: excel.Excel.Range.autoFill_1
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle).
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
+
+
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     langs:
@@ -215,12 +231,12 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to AutoFill. Discontiguous ranges are not supported.
           type:
             - Range | string
         - id: autoFillTypeString
           description: >-
-            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
+            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
           type:
             - >-
@@ -635,9 +651,9 @@ items:
               // NOTE: If no match is found, an ItemNotFound error
               // is thrown when Range.find is evaluated.
               const foundRange = searchRange.find($("#searchText").text(), {
-                  completeMatch: completeMatch,
-                  matchCase: matchCase,
-                  searchDirection: searchDirection
+                  completeMatch: isCompleteMatchToggle,
+                  matchCase: isMatchCaseToggle,
+                  searchDirection: searchDirectionToggle
               });
               
               foundRange.load("address");
@@ -687,9 +703,9 @@ items:
               const table = sheet.tables.getItem("ExpensesTable");
               const searchRange = table.getRange();
               const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
-                  completeMatch: completeMatch,
-                  matchCase: matchCase,
-                  searchDirection: searchDirection
+                  completeMatch: isCompleteMatchToggle,
+                  matchCase: isMatchCaseToggle,
+                  searchDirection: searchDirectionToggle
               });
               
               foundRange.load("address");
@@ -2525,27 +2541,30 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.Range.load_2
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
+    name: load(option)
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;'
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Range;
       return:
         type:
           - excel.Excel.Range
         description: ''
       parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+        - id: option
+          description: ''
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.Range.merge
     summary: |-
       Merge the range cells into one region in the worksheet.

@@ -2681,7 +2681,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2693,7 +2693,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -2701,7 +2701,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2709,7 +2709,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2717,7 +2717,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -2749,7 +2749,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -7667,7 +7667,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7679,7 +7679,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -7687,7 +7687,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -7695,7 +7695,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -7703,7 +7703,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -7735,7 +7735,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -11220,7 +11220,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11232,7 +11232,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -11240,7 +11240,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -11248,7 +11248,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -11256,7 +11256,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -11288,7 +11288,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -13201,7 +13201,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -13213,7 +13213,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -13221,7 +13221,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -13229,7 +13229,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -13237,7 +13237,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -13269,7 +13269,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -15913,7 +15913,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15925,7 +15925,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -15933,7 +15933,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -15941,7 +15941,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -15949,7 +15949,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -15981,7 +15981,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -17062,7 +17062,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17074,7 +17074,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -17082,7 +17082,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -17090,7 +17090,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -17098,7 +17098,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -17130,7 +17130,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -18263,7 +18263,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18275,7 +18275,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -18283,7 +18283,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -18291,7 +18291,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -18299,7 +18299,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -18331,7 +18331,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -19757,7 +19757,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -19769,7 +19769,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -19777,7 +19777,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -19785,7 +19785,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -19793,7 +19793,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -19825,7 +19825,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -22769,7 +22769,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -22781,7 +22781,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -22789,7 +22789,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -22797,7 +22797,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -22805,7 +22805,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -22837,7 +22837,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -50432,7 +50432,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50444,7 +50444,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -50452,7 +50452,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -50460,7 +50460,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -50468,7 +50468,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -50500,7 +50500,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -53097,7 +53097,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -53109,7 +53109,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -53117,7 +53117,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -53125,7 +53125,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -53133,7 +53133,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -53165,7 +53165,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -57148,7 +57148,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -57160,7 +57160,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -57168,7 +57168,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -57176,7 +57176,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -57184,7 +57184,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -57216,7 +57216,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -62288,7 +62288,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -62300,7 +62300,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -62308,7 +62308,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -62316,7 +62316,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -62324,7 +62324,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -62356,7 +62356,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -65178,7 +65178,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -65190,7 +65190,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -65198,7 +65198,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -65206,7 +65206,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -65214,7 +65214,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -65246,7 +65246,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -66333,7 +66333,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -66345,7 +66345,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -66353,7 +66353,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -66361,7 +66361,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -66369,7 +66369,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -66401,7 +66401,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -67710,7 +67710,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -67722,7 +67722,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -67730,7 +67730,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -67738,7 +67738,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -67746,7 +67746,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -67778,7 +67778,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -75069,7 +75069,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -75081,7 +75081,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -75089,7 +75089,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -75097,7 +75097,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -75105,7 +75105,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -75137,7 +75137,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -77058,7 +77058,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -77070,7 +77070,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -77078,7 +77078,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -77086,7 +77086,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -77094,7 +77094,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -77126,7 +77126,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -78727,7 +78727,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -78739,7 +78739,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -78747,7 +78747,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -78755,7 +78755,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -78763,7 +78763,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -78795,7 +78795,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9
@@ -81833,7 +81833,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -81845,7 +81845,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "propertyNamesAndPaths"
+                      "text": "option"
                     },
                     {
                       "kind": "Content",
@@ -81853,7 +81853,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ "
+                      "text": "{\n            "
                     },
                     {
                       "kind": "Reference",
@@ -81861,7 +81861,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; "
+                      "text": "?: string;\n            "
                     },
                     {
                       "kind": "Reference",
@@ -81869,7 +81869,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: string; }"
+                      "text": "?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -81901,7 +81901,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 9

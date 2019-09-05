@@ -502,104 +502,90 @@ export declare namespace Excel {
      * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsSet {
+    export interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsGraySet {
+    export interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeFlagsSet {
+    export interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights1Set {
+    export interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights2Set {
+    export interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSignsSet {
+    export interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbolsSet {
+    export interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbols2Set {
+    export interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsSet {
+    export interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsGraySet {
+    export interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRedToBlackSet {
+    export interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRatingSet {
+    export interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourTrafficLightsSet {
+    export interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsSet {
+    export interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -607,8 +593,7 @@ export declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsGraySet {
+    export interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -616,8 +601,7 @@ export declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveRatingSet {
+    export interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -625,8 +609,7 @@ export declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveQuartersSet {
+    export interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -634,22 +617,19 @@ export declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeStarsSet {
+    export interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrianglesSet {
+    export interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveBoxesSet {
+    export interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -1835,11 +1815,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Runtime;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Runtime;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Runtime;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Runtime object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RuntimeData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1952,11 +1931,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Application;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Application;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2028,11 +2006,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.IterativeCalculation;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.IterativeCalculation;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.IterativeCalculation;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.IterativeCalculation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IterativeCalculationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2387,11 +2364,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Workbook;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Workbook;
         /**
          *
          * Occurs when the autoSave setting is changed on the workbook.
@@ -2480,11 +2456,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.WorkbookProtection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookProtection;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.WorkbookProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorkbookProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2520,11 +2495,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.WorkbookCreated;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookCreated;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.WorkbookCreated;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorkbookCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2931,11 +2905,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Worksheet;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Worksheet;
         /**
          *
          * Occurs when the worksheet is activated.
@@ -3362,11 +3335,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.WorksheetProtection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.WorksheetProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3828,24 +3800,30 @@ export declare namespace Excel {
         set(properties: Excel.Range): void;
         /**
          *
-         * Fills range from the current range to the destination range.
-            The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
+         * Fills range from the current range to the destination range using the specified AutoFill logic. 
+         * The destination range can be null, or can extend the source either horizontally or vertically. 
+         * If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
+         * 
+         * For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
-         * [Api set: ExcelApi 1.9]
+         * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
          *
-         * @param destinationRange - The destination range to autofill.
-         * @param autoFillType - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+         * @param destinationRange - The destination range to AutoFill. Discontiguous ranges are not supported.
+         * @param autoFillType - The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
         autoFill(destinationRange: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          *
-         * Fills range from the current range to the destination range.
-            The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
+         * Fills range from the current range to the destination range using the specified AutoFill logic. 
+         * The destination range can be null, or can extend the source either horizontally or vertically. 
+         * If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
+         * 
+         * For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
-         * [Api set: ExcelApi 1.9]
+         * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
          *
-         * @param destinationRange - The destination range to autofill.
-         * @param autoFillTypeString - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+         * @param destinationRange - The destination range to AutoFill. Discontiguous ranges are not supported.
+         * @param autoFillTypeString - The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
         autoFill(destinationRange: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
         /**
@@ -4486,11 +4464,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Range;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -4873,11 +4850,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeAreas;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeAreas;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeAreas;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -5500,11 +5476,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeView;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeView;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5717,11 +5692,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Setting;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Setting;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Setting;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5951,11 +5925,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.NamedItem;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.NamedItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6006,11 +5979,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.NamedItemArrayValues;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.NamedItemArrayValues;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.NamedItemArrayValues object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemArrayValuesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6089,11 +6061,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Binding;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Binding;
         /**
          *
          * Occurs when data or formatting within the binding is changed.
@@ -6676,11 +6647,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Table;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Table;
         /**
          *
          * Occurs when data in cells changes on a specific table.
@@ -6920,11 +6890,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableColumn;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableColumn;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableColumn;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7095,11 +7064,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableRow;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableRow;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableRow;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7216,11 +7184,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.DataValidation;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataValidation;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.DataValidation;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataValidation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataValidationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7328,11 +7295,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RemoveDuplicatesResult;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RemoveDuplicatesResult;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RemoveDuplicatesResult;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RemoveDuplicatesResult object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RemoveDuplicatesResultData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7687,11 +7653,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7756,11 +7721,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.FormatProtection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FormatProtection;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.FormatProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7857,11 +7821,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFill;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7948,11 +7911,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeBorder;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeBorder;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8161,11 +8123,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8596,11 +8557,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Chart;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Chart;
         /**
          *
          * Occurs when the chart is activated.
@@ -8697,11 +8657,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPivotOptions;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPivotOptions;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPivotOptions;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPivotOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPivotOptionsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8787,11 +8746,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAreaFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAreaFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9272,11 +9230,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartSeries;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartSeries;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9341,11 +9298,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartSeriesFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartSeriesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9514,11 +9470,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPoint;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPoint;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPoint;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9583,11 +9538,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPointFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPointFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPointFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9679,11 +9633,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxes;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxes;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10034,11 +9987,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxis;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxis;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10110,11 +10062,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10195,11 +10146,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisTitle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10271,11 +10221,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisTitleFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10433,11 +10382,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartDataLabels;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabels;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartDataLabels;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10637,11 +10585,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartDataLabel;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabel;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartDataLabel;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10713,11 +10660,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartDataLabelFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartDataLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10803,11 +10749,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartErrorBars;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartErrorBars;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartErrorBars;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartErrorBars object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartErrorBarsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10865,11 +10810,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartErrorBarsFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartErrorBarsFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartErrorBarsFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartErrorBarsFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartErrorBarsFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10934,11 +10878,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartGridlines;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlines;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartGridlines;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10996,11 +10939,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartGridlinesFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartGridlinesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11121,11 +11063,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLegend;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLegend;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11218,11 +11159,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLegendEntry;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendEntry;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLegendEntry;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegendEntry object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11349,11 +11289,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLegendFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLegendFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11425,11 +11364,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartMapOptions;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartMapOptions;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartMapOptions;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartMapOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartMapOptionsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11590,11 +11528,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTitle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11652,11 +11589,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartFormatString;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFormatString;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartFormatString;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFormatString object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFormatStringData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11728,11 +11664,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTitleFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitleFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11848,11 +11783,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartBorder;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBorder;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11952,11 +11886,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartBinOptions;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBinOptions;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartBinOptions;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartBinOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBinOptionsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12042,11 +11975,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartBoxwhiskerOptions;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBoxwhiskerOptions;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartBoxwhiskerOptions;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartBoxwhiskerOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBoxwhiskerOptionsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12125,11 +12057,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLineFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLineFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12222,11 +12153,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFont;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12361,11 +12291,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTrendline;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendline;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTrendline;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12496,11 +12425,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTrendlineFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTrendlineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12644,11 +12572,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTrendlineLabel;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTrendlineLabel;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineLabel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12720,11 +12647,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTrendlineLabelFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTrendlineLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12845,11 +12771,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPlotArea;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotArea;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPlotArea;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPlotArea object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12914,11 +12839,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPlotAreaFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPlotAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPlotAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13055,11 +12979,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableSort;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableSort;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableSort;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13288,11 +13211,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Filter;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Filter;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Filter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13494,11 +13416,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.AutoFilter;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.AutoFilter;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.AutoFilter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.AutoFilter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.AutoFilterData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13760,11 +13681,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.CustomXmlPart;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomXmlPart;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CustomXmlPart;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13990,11 +13910,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotTable;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotTable;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotTable;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotTable object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableData`) that contains shallow copies of any loaded child properties from the original object.
@@ -14195,11 +14114,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotLayout;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotLayout;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotLayout;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.
@@ -14335,11 +14253,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotHierarchy;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotHierarchy;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -14504,11 +14421,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchy;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RowColumnPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -14680,11 +14596,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.FilterPivotHierarchy;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.FilterPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.FilterPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -14869,11 +14784,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.DataPivotHierarchy;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.DataPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -15088,11 +15002,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotField;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotField;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotField;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldData`) that contains shallow copies of any loaded child properties from the original object.
@@ -15235,11 +15148,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotItem;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -15664,11 +15576,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.DocumentProperties;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DocumentProperties;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.DocumentProperties;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -15747,11 +15658,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.CustomProperty;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomProperty;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CustomProperty;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16153,11 +16063,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16267,11 +16176,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.DataBarConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.DataBarConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataBarConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16344,11 +16252,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalDataBarPositiveFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalDataBarPositiveFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16428,11 +16335,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalDataBarNegativeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalDataBarNegativeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarNegativeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16519,11 +16425,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.CustomConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CustomConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16595,11 +16500,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalFormatRule;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalFormatRule;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16678,11 +16582,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.IconSetConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.IconSetConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16783,11 +16686,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ColorScaleConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ColorScaleConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ColorScaleConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -16910,11 +16812,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TopBottomConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TopBottomConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TopBottomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17001,11 +16902,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PresetCriteriaConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PresetCriteriaConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17085,11 +16985,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TextConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TextConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TextConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17176,11 +17075,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.CellValueConditionalFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CellValueConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CellValueConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CellValueConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17288,11 +17186,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalRangeFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalRangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17385,11 +17282,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalRangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17454,11 +17350,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalRangeFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalRangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17530,11 +17425,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ConditionalRangeBorder;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ConditionalRangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -17854,11 +17748,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Style;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Style;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Style;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -18117,11 +18010,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableStyle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableStyle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableStyle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -18307,11 +18199,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PivotTableStyle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotTableStyle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PivotTableStyle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotTableStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableStyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -18497,11 +18388,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.SlicerStyle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.SlicerStyle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.SlicerStyle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.SlicerStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerStyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -18687,11 +18577,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TimelineStyle;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TimelineStyle;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TimelineStyle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TimelineStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -18969,11 +18858,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PageLayout;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PageLayout;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PageLayout;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PageLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageLayoutData`) that contains shallow copies of any loaded child properties from the original object.
@@ -19148,11 +19036,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.HeaderFooter;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.HeaderFooter;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.HeaderFooter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.HeaderFooter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterData`) that contains shallow copies of any loaded child properties from the original object.
@@ -19249,11 +19136,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.HeaderFooterGroup;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.HeaderFooterGroup;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.HeaderFooterGroup;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.HeaderFooterGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterGroupData`) that contains shallow copies of any loaded child properties from the original object.
@@ -19315,11 +19201,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.PageBreak;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PageBreak;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.PageBreak;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PageBreak object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PageBreakData`) that contains shallow copies of any loaded child properties from the original object.
@@ -19699,11 +19584,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Comment;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Comment;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Comment;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
@@ -19917,11 +19801,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.CommentReply;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CommentReply;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.CommentReply;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CommentReply object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -20424,11 +20307,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Shape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Shape;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Shape;
         /**
          *
          * Occurs when the shape is activated.
@@ -20497,11 +20379,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.GeometricShape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.GeometricShape;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.GeometricShape;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.GeometricShape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.GeometricShapeData`) that contains shallow copies of any loaded child properties from the original object.
@@ -20559,11 +20440,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Image;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Image;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Image;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Image object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ImageData`) that contains shallow copies of any loaded child properties from the original object.
@@ -20628,11 +20508,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ShapeGroup;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeGroup;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ShapeGroup;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ShapeGroup object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeGroupData`) that contains shallow copies of any loaded child properties from the original object.
@@ -20886,11 +20765,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Line;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Line;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Line;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Line object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.LineData`) that contains shallow copies of any loaded child properties from the original object.
@@ -20978,11 +20856,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ShapeFill;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeFill;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ShapeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ShapeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21075,11 +20952,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ShapeLineFormat;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeLineFormat;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ShapeLineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ShapeLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21228,11 +21104,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TextFrame;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextFrame;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TextFrame;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TextFrame object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextFrameData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21307,11 +21182,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TextRange;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextRange;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TextRange;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TextRange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextRangeData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21404,11 +21278,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ShapeFont;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeFont;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ShapeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ShapeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21603,11 +21476,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Slicer;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Slicer;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Slicer;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Slicer object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerData`) that contains shallow copies of any loaded child properties from the original object.
@@ -21784,11 +21656,10 @@ export declare namespace Excel {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.SlicerItem;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.SlicerItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Excel.SlicerItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.SlicerItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerItemData`) that contains shallow copies of any loaded child properties from the original object.

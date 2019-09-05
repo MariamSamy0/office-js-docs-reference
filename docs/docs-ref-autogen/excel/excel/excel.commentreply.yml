@@ -282,28 +282,31 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.CommentReply.load_2
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
     isPreview: true
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
+    name: load(option)
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CommentReply;'
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.CommentReply;
       return:
         type:
           - excel.Excel.CommentReply
         description: ''
       parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+        - id: option
+          description: ''
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: excel.Excel.CommentReply.resolved
     summary: >-
       Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
